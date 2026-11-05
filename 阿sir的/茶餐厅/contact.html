@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>聯絡與查詢｜陳記茶餐廳</title>
+</head>
+
+<body>
+    <header>
+        <p>陳記茶餐廳</p>
+        <nav aria-label="主要導覽">
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="about.html">簡介</a></li>
+                <li><a href="menu.html">食物介紹</a></li>
+                <li><a href="location.html">位置</a></li>
+                <li><a href="contact.html" aria-current="page">聯絡（目前頁）</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content">
+        <h1>聯絡與查詢</h1>
+        <p>示例電郵：hello@example.invalid</p>
+        <form action="contact.html" method="get">
+            <p><label for="customer-name">称呼（2 至 40）</label>
+                <input id="customer-name" name="customername" type="text" required minlength="2" maxlength="40"
+                    value="请输入文案">
+            </p>
+            <p>
+                <label for="password">密码</label>
+                <input id="password" name="password" type="password" required>
+            </p>
+            <p><label for="customer-email">电邮</label>
+                <input id="customer-email" name="eamil" type="email" required placeholder="name@company.com">
+            </p>
+            <p><label for="message">查询内容（10 至 300 字）</label>
+                <textarea id="message" name="message" rows="5" required minlength="10" maxlength="300"></textarea>
+            </p>
+            <p>
+                <button type="button">按我</button>
+            </p>
+            <p>
+                <select id="enquiry-type" name="enquiryType" required>
+                    <option value="">请选择</option>
+                    <option value="menu">餐牌资料</option>
+                    <option value="hours">营业时间</option>
+                </select>
+                <a href="#foodintro">前往推荐食品</a>
+                <a href="#drinkintro">前往饮品</a>
+                <a href="about.html">阅读餐厅简介</a>
+            </p>
+        </form>
+        <p>此網站只供課堂練習。</p>
+    </main>
+    <footer>
+        <p>課堂示範網站</p>
+    </footer>
+</body>
+
+</html>
